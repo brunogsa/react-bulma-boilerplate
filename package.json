@@ -6,7 +6,7 @@
     "start": "rimraf build && webpack-dev-server",
     "clean": "rimraf dist",
     "production": "cross-env npm run clean && webpack --config webpack.production.config.js --progress --profile --colors",
-    "lint": "eslint ./app/**/**.js ./tests/**/**.js *.js",
+    "lint": "eslint ./app/**/**.js ./tests/**/**.js",
     "test": "cross-env npm run lint && npm run test:unit",
     "test:unit": "jest --coverage",
     "report:coverage": "opn coverage/lcov-report/index.html"
@@ -34,11 +34,7 @@
     "react": "16.2.0",
     "react-dom": "16.2.0",
     "react-hot-loader": "3.1.3",
-    "react-router-dom": "4.2.2",
-    "webpack": "3.9.1",
-    "html-webpack-plugin": "2.30.1",
-    "copy-webpack-plugin": "4.2.3",
-    "extract-text-webpack-plugin": "3.0.2"
+    "react-router-dom": "4.2.2"
   },
   "devDependencies": {
     "opn-cli": "^3.1.0",
