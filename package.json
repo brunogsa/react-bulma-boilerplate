@@ -3,12 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "rimraf build && webpack-dev-server",
-    "clean": "rimraf dist",
-    "production": "cross-env npm run clean && webpack --config webpack.production.config.js --progress --profile --colors",
-    "lint": "eslint ./app/**/**.js ./tests/**/**.js",
+    "start": "cross-env rimraf build && webpack-dev-server",
+    "build": "cross-env rimraf dist && webpack --config webpack.production.config.js --progress --profile --colors",
+    "lint": "cross-env eslint ./app/**/**.js ./tests/**/**.js",
     "test": "cross-env npm run lint && npm run test:unit",
-    "test:unit": "jest --coverage",
+    "test:unit": "cross-env jest --coverage",
     "report:coverage": "opn coverage/lcov-report/index.html"
   },
   "author": "Bruno Agostini <brunogsa.92@gmail.com>",

@@ -24,8 +24,7 @@ cd -
 ## Available Commands
 
 - `npm start` - Start the dev server
-- `npm clean` - Delete the dist folder
-- `npm run production` - Create a production ready build in `dist` folder
+- `npm run build` - Create a production ready build in `dist` folder
 - `npm run lint` - Execute an ESLint check
 - `npm test` - Checks if your code is ok before creating a commit
 - `npm run test:unit` - Run your unit tests
